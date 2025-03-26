@@ -1,0 +1,144 @@
+/* style.css - Dark Theme */
+/* Global theme adjustments - these apply to the entire app */
+.stApp {
+    background-color: #121212 !important;
+    color: #e0e0e0 !important;
+}
+
+/* Chat interface styling - these selectors are specific to the chat interface */
+div:not(.project-setup-container) .chat-container {
+    padding: 10px 20px !important;
+    font-family: 'Inter', sans-serif !important;
+}
+
+div:not(.project-setup-container) .user-msg {
+    background-color: #254f7d !important;
+    color: #ffffff !important;
+    padding: 12px !important;
+    border-radius: 10px !important;
+    margin: 5px 0 !important;
+    max-width: 80% !important;
+    align-self: flex-end !important;
+}
+
+div:not(.project-setup-container) .assistant-msg {
+    background-color: #2d2d2d !important;
+    color: #ffffff !important;
+    padding: 12px !important;
+    border-radius: 10px !important;
+    margin: 5px 0 !important;
+    max-width: 80% !important;
+    align-self: flex-start !important;
+}
+
+/* Additional styling for ChatGPT-like experience */
+div.stChatMessage {
+    padding: 0.5rem 0 !important;
+}
+
+div[data-testid="stChatMessageContent"] {
+    border-radius: 12px !important;
+    padding: 0.5rem 1rem !important;
+}
+
+/* User message styling */
+div.element-container:has(div[data-testid="stChatMessageContent"]:has(div[data-testid="stVerticalBlock"] div.stMarkdown)) div[data-testid="stChatMessageContent"] {
+    background-color: #254f7d !important;
+    color: #ffffff !important;
+    border-radius: 12px !important;
+    padding: 0.7rem 1rem !important;
+    width: fit-content !important;
+    margin-left: auto !important;
+    margin-right: 0 !important;
+    max-width: 80% !important;
+}
+
+/* Assistant message styling */
+div.element-container:has(div.stChatMessage[data-testid="stChatMessage"] div[data-testid="stImage"]) div[data-testid="stChatMessageContent"] {
+    background-color: #2d2d2d !important;
+    color: #ffffff !important;
+    border-radius: 12px !important;
+    padding: 0.7rem 1rem !important;
+    width: fit-content !important;
+    margin-left: 0 !important;
+    margin-right: auto !important;
+    max-width: 80% !important;
+}
+
+/* Sidebar styling */
+section[data-testid="stSidebar"] {
+    min-width: 250px !important;
+    max-width: 300px !important;
+    padding: 1rem !important;
+    background-color: #1a1a1a !important;
+    border-right: 1px solid #333333 !important;
+}
+
+/* Clean title and header - using more specific selectors */
+div:not(.project-setup-container) h1 {
+    font-size: 1.5rem !important;
+    margin-bottom: 1rem !important;
+    font-weight: 600 !important;
+    color: #ffffff !important;
+}
+
+div:not(.project-setup-container) .main .block-container {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+    max-width: 48rem !important;
+}
+
+/* Chat input styling */
+div[data-testid="stChatInput"] textarea {
+    border-radius: 8px !important;
+    background-color: #2d2d2d !important;
+    color: #ffffff !important;
+    border: 1px solid #444444 !important;
+}
+
+/* Make sure code blocks are readable */
+pre {
+    background-color: #2d2d2d !important;
+    color: #e0e0e0 !important;
+    border: 1px solid #444444 !important;
+}
+
+code {
+    color: #a5d6ff !important;
+    background-color: #2a2a2a !important;
+}
+
+/* Adjust table styling for dark mode */
+div.stDataFrame {
+    background-color: #1e1e1e !important;
+    color: #e0e0e0 !important;
+}
+
+div.stDataFrame table {
+    border-color: #333333 !important;
+}
+
+div.stDataFrame th {
+    background-color: #2d2d2d !important;
+    color: #ffffff !important;
+    border-color: #444444 !important;
+}
+
+div.stDataFrame td {
+    background-color: #252525 !important;
+    color: #e0e0e0 !important;
+    border-color: #333333 !important;
+}
+
+/* Button styling - specific to non-project-setup buttons */
+div:not(.project-setup-container) button,
+div:not(.project-setup-container) .stButton button {
+    background-color: #254f7d !important;
+    color: white !important;
+    border: none !important;
+}
+
+div:not(.project-setup-container) button:hover,
+div:not(.project-setup-container) .stButton button:hover {
+    background-color: #2a5a8a !important;
+}

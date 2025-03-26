@@ -1,0 +1,116 @@
+/* Project Setup Styling - Scoped to the project setup page */
+/* These styles will ONLY apply to elements within .project-setup-container */
+.project-setup-container h1 {
+    color: #ffffff !important;
+    padding-bottom: 10px !important;
+}
+
+/* Section headers */
+.project-setup-container h3 {
+    margin-top: 0 !important;
+    margin-bottom: 10px !important;
+    color: #ffffff !important;
+}
+
+/* File uploader styling with enhanced borders */
+.project-setup-container .stFileUploader {
+    background-color: #1e1e1e !important;
+    padding: 15px !important;
+    border-radius: 10px !important;
+    border: 6px solid rgba(255, 255, 255, 0.2) !important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2) !important;
+    transition: border-color 0.3s, box-shadow 0.3s !important;
+}
+
+.project-setup-container .stFileUploader:hover {
+    border-color: rgba(255, 255, 255, 0.3) !important;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Button styling - scoped to project setup */
+.project-setup-container .stButton button {
+    background-color: #4CAF50 !important;
+    color: white !important;
+    border: none !important;
+    padding: 10px 20px !important;
+    border-radius: 5px !important;
+    font-weight: bold !important;
+    transition: background-color 0.3s !important;
+}
+
+.project-setup-container .stButton button:hover {
+    background-color: #45a049 !important;
+}
+
+/* Card styling */
+.project-setup-container .card {
+    background-color: rgba(30, 30, 30, 0.6) !important;
+    border-radius: 10px !important;
+    padding: 20px !important;
+    margin-bottom: 15px !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    transition: transform 0.2s !important;
+}
+
+.project-setup-container .card:hover {
+    transform: translateY(-2px) !important;
+}
+
+/* Container styling */
+.project-setup-container .container {
+    background-color: rgba(30, 30, 30, 0.4) !important;
+    border-radius: 8px !important;
+    padding: 15px !important;
+    margin-bottom: 10px !important;
+    border: 1px solid rgba(255, 255, 255, 0.05) !important;
+}
+
+/* Image styling */
+.project-setup-container .stImage {
+    margin-top: -10px !important;
+    margin-bottom: 10px !important;
+}
+
+/* Upload widget containers for better visual distinction */
+.project-setup-container [data-testid="column"]:nth-of-type(1),
+.project-setup-container [data-testid="column"]:nth-of-type(2) {
+    background-color: rgba(30, 30, 30, 0.5) !important;
+    border-radius: 12px !important;
+    padding: 15px !important;
+    border: 2px solid rgba(255, 255, 255, 0.15) !important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2) !important;
+    margin: 0 5px !important;
+}
+
+/* Facebook connect button */
+.project-setup-container button[key="facebook_connect"] {
+    background-color: #3b5998 !important;
+}
+
+.project-setup-container button[key="facebook_connect"]:hover {
+    background-color: #344e86 !important;
+}
+
+/* Active file indicator */
+.project-setup-container .success {
+    background-color: rgba(76, 175, 80, 0.2) !important;
+    border-color: rgba(76, 175, 80, 0.4) !important;
+}
+
+/* Remove button styling */
+.project-setup-container button[key*="remove"] {
+    background-color: #f44336 !important;
+}
+
+.project-setup-container button[key*="remove"]:hover {
+    background-color: #e53935 !important;
+}
+
+/* Set active button styling */
+.project-setup-container button[key*="active"] {
+    background-color: #2196F3 !important;
+}
+
+.project-setup-container button[key*="active"]:hover {
+    background-color: #1e88e5 !important;
+}
